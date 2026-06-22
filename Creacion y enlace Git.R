@@ -20,6 +20,11 @@ usethis::create_github_token()
 gitcreds::gitcreds_set()
 install.packages("gh")
 usethis::use_github()
+install.packages("usethis")
+install.packages("gh")
+install.packages("gitcreds")
+usethis::use_github()
+
 
 
 
