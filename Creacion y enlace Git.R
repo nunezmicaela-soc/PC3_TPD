@@ -39,8 +39,16 @@ usethis::create_github_token()
 gitcreds::gitcreds_set()
 gitcreds::gitcreds_get()
 usethis::use_github()
+usethis::use_git_remote("origin", url = NULL, overwrite = TRUE)`
+usethis::use_github()
 
+usethis::use_git_config(user.name = "nunez.micaela-soc", user.email = "nunez.micaela@pucp.edu.pe")
+usethis::use_git()
+usethis::use_github()
 
+git remote add origin https://github.com/nunezmicaela-soc/PC3_TPD.git
+git branch -M main
+git push -u origin main
 
 
 
