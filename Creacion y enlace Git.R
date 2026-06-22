@@ -1,5 +1,5 @@
 #=============================================
-#Práctica Calificada 3: Datos de la ENAHO sobre "Actividad agropecuaria" 
+#Práctica Calificada 3: Datos de la ENAHO sobre "Esparcimiento, diversión y servicios de cultura" 
 #Autora: Micaela Nuñez Cordero
 #Objetivo de script: Crear sistema de carpetas y enlazar con GitHub
 #Fecha: 21 junio del 2026
