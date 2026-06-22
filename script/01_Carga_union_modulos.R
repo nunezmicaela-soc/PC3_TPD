@@ -5,7 +5,7 @@
 #Fecha: 22-06-26
 #=====================================================================
 
-#Carga de librerias----------------------------------------------------
+#1. Carga de librerias----------------------------------------------------
 install.packages("tidyverse")
 library(tidyverse)
 install.packages("rio")
@@ -17,3 +17,11 @@ install.packages("renv")
 
 library(readr)
 renv::init()
+renv::snapshot()
+
+#2. Importar datos
+library(rio)
+mod601 <- import("datos/crudos/Enaho01-2025-601.csv", encoding="Latin-1")
+mod606 <- import("datos/crudos/Enaho01-2025-606.csv", encoding="Latin-1")
+
+#
