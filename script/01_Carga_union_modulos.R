@@ -46,6 +46,9 @@ mod606_hogar <- mod606 %>%
   group_by(across(all_of(keys_hogar))) %>%
   summarise(gasto_cultura = sum(P606B, na.rm = TRUE), .groups = "drop")
 
+enaho_2025 <- mod601_hogar %>%
+  left_join(mod606_hogar, by = keys_hogar)
+
 
   
   
