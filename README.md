@@ -19,3 +19,5 @@ El objetivo es practicar la importación, transformación y unión de bases de d
 Se obtuvo una base consolidada (`enaho_2025.parquet`) con una fila por hogar, que contiene:
 - Gasto total en alimentos y bebidas.
 - Gasto total en cultura y esparcimiento.
+## Enlace al repositorio
+[GitHub - PC3_TPD](https://github.com/nunezmicaela-soc/PC3_TPD)
