@@ -10,6 +10,7 @@ dir.create("datos/crudos")
 dir.create("datos/procesados")
 dir.create("outputs")
 dir.create("docs")
+dir.create("script")
 
 #Enlace con Git y Github 
 install.packages("usethis")
