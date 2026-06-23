@@ -24,4 +24,28 @@ library(rio)
 mod601 <- import("datos/crudos/Enaho01-2025-601.csv", encoding="Latin-1")
 mod606 <- import("datos/crudos/Enaho01-2025-606.csv", encoding="Latin-1")
 
-#
+#3. Union de bases--------------------------
+keys_hogar <- c("AÑO", "MES", "CONGLOME", "VIVIENDA", "HOGAR","UBIGEO", "DOMINIO", "ESTRATO", "NCONGLOME", "SUB_CONGLOME")
+names(mod601)
+names(mod606)
+
+str(mod601$P601C)
+
+mod601 <- mod601 %>%
+  mutate(P601C = as.numeric(P601C))
+mod606 <- mod606 %>%
+  mutate(P606B = as.numeric(P606B))
+
+mod601_hogar <- mod601 %>%
+  mutate(P601C = as.numeric(P601C)) %>%
+  group_by(across(all_of(keys_hogar))) %>%
+  summarise(gasto_alimentos = sum(P601C, na.rm = TRUE), .groups = "drop")
+
+mod606_hogar <- mod606 %>%
+  mutate(P606B = as.numeric(P606B)) %>%
+  group_by(across(all_of(keys_hogar))) %>%
+  summarise(gasto_cultura = sum(P606B, na.rm = TRUE), .groups = "drop")
+
+
+  
+  
