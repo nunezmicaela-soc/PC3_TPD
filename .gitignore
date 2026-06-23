@@ -5,6 +5,8 @@
 .DS_Store
 .quarto
 
-datos/crudos 
+datos/crudos/
+datos/procesados/
 *.csv
 *.sav
+*.parquet
